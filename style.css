@@ -1,0 +1,29 @@
+.login-area h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
+}
+.form-area{
+    margin: 5% 25%;
+    padding: 8% 15%;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.withdraw{
+    background-color: rgb(19, 161, 243);
+}
+.deposit{
+    background-color: rgb(246, 141, 3);
+}
+.balance{
+    background-color: rgb(243, 53, 19);
+}
+.withdraw, .deposit, .balance{
+    color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0 40px;
+}
+.transaction{
+    display: none;
+    margin: 60px 0;
+}

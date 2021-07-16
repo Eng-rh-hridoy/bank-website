@@ -12,12 +12,34 @@
 </head>
 <body>
     <section class="container">
-        <div class="login-area">
+        <div class="login-area" id="login-area">
             <h2>Welcome To M-Bank</h2>
             <div class="form-area">
                 <input type="text" name="" class="form-control" id="" placeholder="User name or e-mail"><br>
                 <input type="password" name="" class="form-control" id="" placeholder="Password"><br>
-                <button type="submit" class="btn btn-success">Login</button>
+                <button type="submit" class="btn btn-success" id="login-btn">Login</button>
+            </div>
+        </div>
+        <div class="transaction" id="transaction">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="withdraw">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="deposit">
+                        <h5>Deposit</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance">
+                        <h5>Balance</h5>
+                        <h2>$1240</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
