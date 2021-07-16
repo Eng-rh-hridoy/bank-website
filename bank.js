@@ -23,8 +23,7 @@ function updateBalance(id, depositAmount){
     const updateTotal = BalanceAmount + depositAmount;
     document.getElementById(id).innerText = updateTotal;
 }
-//////////////////////////////////////////////////
-
+// withdraw Amount
 const withdrawButton = document.getElementById("withdraw-btn");
 withdrawButton.addEventListener("click", function(){
     const withdrawInput = document.getElementById("withdraw-input").value;
@@ -33,7 +32,7 @@ withdrawButton.addEventListener("click", function(){
     updateWithdrawTotal("total-balance", withdrawAmount);
     document.getElementById("withdraw-input").value = "";
 });
-
+// update withrawAmount function
 function updateWithdrawTotal(id, withdrawAmount){
     const Balance = document.getElementById(id).innerText;
     const BalanceAmount = parseFloat(Balance);
@@ -45,6 +44,7 @@ function updateWithdrawTotal(id, withdrawAmount){
     document.getElementById(id).innerText = updateTotal;
     }
 }
+
 function updateWithdraw(id, withdrawAmount){
     const Balance = document.getElementById(id).innerText;
     const BalanceAmount = parseFloat(Balance);
@@ -54,7 +54,5 @@ function updateWithdraw(id, withdrawAmount){
     else{
         const updateTotal = BalanceAmount + withdrawAmount;
         document.getElementById(id).innerText = updateTotal;
-    }
-    
-    
+    }   
 }
