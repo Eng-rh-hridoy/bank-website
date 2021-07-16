@@ -32,27 +32,17 @@ withdrawButton.addEventListener("click", function(){
     updateWithdrawTotal("total-balance", withdrawAmount);
     document.getElementById("withdraw-input").value = "";
 });
-// update withrawAmount function
+// update withdrawAmount function
 function updateWithdrawTotal(id, withdrawAmount){
     const Balance = document.getElementById(id).innerText;
     const BalanceAmount = parseFloat(Balance);
-    if(withdrawAmount > BalanceAmount){
-        alert("Sorry!!!\nYour withdraw amount is cross the main balance...");
-    }
-    else{
     const updateTotal = BalanceAmount - withdrawAmount;
     document.getElementById(id).innerText = updateTotal;
-    }
 }
 
 function updateWithdraw(id, withdrawAmount){
     const Balance = document.getElementById(id).innerText;
     const BalanceAmount = parseFloat(Balance);
-    if(withdrawAmount > BalanceAmount){
-        document.getElementById(id).innerText = BalanceAmount;
-    }
-    else{
-        const updateTotal = BalanceAmount + withdrawAmount;
-        document.getElementById(id).innerText = updateTotal;
-    }   
+    const updateTotal = BalanceAmount + withdrawAmount;
+    document.getElementById(id).innerText = updateTotal; 
 }
