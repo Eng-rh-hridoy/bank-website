@@ -12,36 +12,59 @@
 </head>
 <body>
     <section class="container">
+        <!-- login area  -->
         <div class="login-area" id="login-area">
             <h2>Welcome To M-Bank</h2>
             <div class="form-area">
-                <input type="text" name="" class="form-control" id="" placeholder="User name or e-mail"><br>
-                <input type="password" name="" class="form-control" id="" placeholder="Password"><br>
+                <input type="text" name="" class="form-control" placeholder="User name or e-mail"><br>
+                <input type="password" name="" class="form-control" placeholder="Password"><br>
                 <button type="submit" class="btn btn-success" id="login-btn">Login</button>
             </div>
         </div>
+        <!-- ///////////////////////////////////////////////// -->
+        <!-- transaction -->
         <div class="transaction" id="transaction">
+            <!-- ///////////////////////////////// -->
             <div class="row">
-                <div class="col-md-4">
-                    <div class="withdraw">
-                        <h5>Withdraw</h5>
-                        <h2>$00</h2>
-                    </div>
-                </div>
                 <div class="col-md-4">
                     <div class="deposit">
                         <h5>Deposit</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="total-deposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw">
+                        <h5>Withdraw</h5>
+                        <h2>$<span id="total-withdraw">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="balance">
                         <h5>Balance</h5>
-                        <h2>$1240</h2>
+                        <h2>$<span id="total-balance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+<!-- //////////////////////////////// -->
+<!-- update-balance -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="update-balance">
+                        <h3>Deposit</h3>
+                        <input type="text" name="" class="form-control" id="deposit-input" placeholder="$ amount you want to deposit"><br>
+                        <button type="submit" class="btn btn-success" id="deposit-btn">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="update-balance">
+                        <h3>Withdraw</h3>
+                        <input type="text" name="" class="form-control" id="withdraw-input" placeholder="$ amount you want to withdraw"><br>
+                        <button type="submit" class="btn btn-success" id="withdraw-btn">Withdraw</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ////////////////////////////////////////// -->
     </section>
 
 

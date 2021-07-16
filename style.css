@@ -5,7 +5,7 @@
 }
 .form-area{
     margin: 5% 25%;
-    padding: 8% 15%;
+    padding: 8% 13%;
     box-shadow: 5px 5px 10px lightgray;
 }
 .withdraw{
@@ -26,4 +26,12 @@
 .transaction{
     display: none;
     margin: 60px 0;
+}
+.row{
+    margin-bottom: 60px;
+}
+.update-balance {
+    padding: 65px 75px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px lightgray;
 }
